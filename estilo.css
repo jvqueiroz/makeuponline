@@ -1,0 +1,283 @@
+/*=================Layout===========*/ 
+html, body, #banner{
+	height: 100%;
+	overflow: auto;
+}
+body{
+	background: linear-gradient(180deg, #231047 0%, #E62D93 100%);
+	overflow-x: hidden;
+}
+
+@media screen and (max-width: 767px) and (max-width: 575px) {
+
+	#banner .banner{
+	 background: url(imagens/Banner3.jpg);
+	 background-size: 100%;
+	}
+	.titulo_principal .title1{
+	font-size: 40px;
+
+	}
+	.titulo_principal .title2{
+	font-size: 30px;
+	}
+	.titulo_principal .descricao1{
+	font-size: 14px;
+	}
+	#preco .descricao_preco, #conteudo .title_conteudo{
+		font-size: 25px;
+	}
+	#preco .descricao_preco2, .row .descricao_preco2{
+		font-size: 20px;
+	}
+	#fotos{
+		flex-direction: column;
+	}
+	.foto02{
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-top: 57px;
+		margin-bottom: 57px;
+	}
+	#sobre .title_sobre, #depoimentos .title_sobre{
+		font-size: 25px;
+	}
+	.video{
+		max-width:320px; 
+		margin-bottom: 10px;
+	}
+	#fotos .img{
+		padding-right: 0px;
+	}
+
+}
+
+/*--Barra de navegação--*/
+#nav-padrao{
+	background: #231047;
+	position: fixed;
+}
+.nav-link2{
+	color: white;
+}
+
+.icon:hover{
+	color: white;
+	text-decoration: none;
+	transition: all 0.1s;
+}
+
+/*--Banner--*/
+#banner{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left; 
+	background: url(imagens/Banner2.png);
+  	background-repeat: no-repeat;
+  	overflow: auto;
+  	background-size: cover;
+}
+.banner{
+	background: url(imagens/banner.png);
+  	background-repeat: no-repeat;
+  	overflow: auto;
+  	background-size: cover;
+}
+.titulo_principal{
+	color: white;
+	text-align: right;
+	margin-top: 100px;
+	margin-bottom: 50px;
+
+}
+.btn_principal{
+	margin-top: 100px;
+}
+
+/*--Botão--*/
+.btn2{
+	max-width: 320px;
+	height: 49px;
+	padding: 10px;
+	font-size: 20px;
+	background: linear-gradient(180deg, #EC268F 0%, #62A1D0 100%);
+	box-shadow: -2px -4px 4px #DE3496, 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius:30px;
+}
+
+/*--preco--*/
+
+#preco{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	padding-top:81px; 
+}
+
+.descricao_preco{
+	margin-top: 40px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	color: white;
+}
+.descricao_preco2{
+	margin-top: 30px;
+	font-family: Quattrocento Sans;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 160.3%;
+	color: white;
+	text-align: center;
+}
+/*--fotos--*/
+
+#fotos{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top:50px; 
+}
+.foto02{
+	margin-right: 57px;
+	margin-left: 57px;
+	border-radius: 6px;
+}
+.foto01{
+	transform: rotate(-8.02deg);
+	 -ms-transform: rotate(-8.02deg);
+	 -webkit-transform:rotate(-8.02deg);
+	 border-radius: 6px;
+}
+.foto03{
+	transform: rotate(6.45deg);
+	 -ms-transform: rotate(6.45deg);
+	 -webkit-transform:rotate(6.45deg);
+	 border-radius: 6px;
+}
+
+/*--fotos--*/
+#conteudo{
+	background: #E0DEDE;
+	margin-top: 50px;
+}
+/*--conteudo--*/
+.img{
+	text-align: center;
+	padding-right: 30px;
+}
+/*--sobre--*/
+#sobre{
+	margin-top: 50px;
+}
+/*--depoimentos--*/
+#depoimentos{
+	margin-top: 50px;
+}
+/*--cronometro--*/
+#cronometro{
+	margin-top: 50px;
+	background: #E0DEDE;
+	margin-bottom: 50px;
+}
+
+/*=================tipografia===========*/ 
+.titulo_principal>h1{
+	font-family: "Quattrocento Sans";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 70px;
+	text-align: right;
+	letter-spacing: 0.215em;
+	text-transform: uppercase;
+}
+.titulo_principal>h2{
+	font-family: QueenMother;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 60px;
+	letter-spacing: 0.100em;
+	text-transform: capitalize;
+}
+.titulo_principal>p{
+	font-family: Quattrocento Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 160.3%;
+
+	margin-top: 10px;
+}
+.btn_principal>p, #preco>.bce{
+	margin-top: 10px;
+	color: white;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 127.3%;
+
+}
+.title_sobre{
+	text-align: left;
+	color: white;
+	font-family: Quattrocento Sans;
+	font-style: normal;
+	font-weight:  bold;
+	font-size: 40px;
+	line-height: 127.3%;
+}
+.title_cronometro{
+	font-family: Quattrocento Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 127.3%;
+	color: #D33D9B;
+}
+.descricao_cronometro{
+	font-family: Quattrocento Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 127.3%;
+	color: #24104F;
+}
+.descricao_conteudo{
+	font-family: Quattrocento Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 127.3%;
+	text-align: center;
+	color: #24104F;
+	margin-top: -10px;
+}
+.title_conteudo{
+	padding-top: 20px;
+	text-align: center;
+	font-family: Quattrocento Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 127.3%;
+	color: #24104F;
+
+}
+a{
+	color: white;
+	font-family: Roboto;
+	text-decoration: none;
+}
+
+.btn2:hover{
+	background: #EC268F;
+	text-decoration: none;
+	transition: all 0.1s;
+	color: white;
+}
