@@ -5,6 +5,7 @@ html, body, #banner{
 }
 body{
 	background: linear-gradient(180deg, #231047 0%, #E62D93 100%);
+	background-attachment:fixed;
 	overflow-x: hidden;
 }
 
